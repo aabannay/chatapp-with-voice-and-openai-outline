@@ -34,7 +34,7 @@ def speech_to_text_route():
 
 @app.route('/process-message', methods=['POST'])
 def process_prompt_route():
-    ruser_message = request.json['userMessage'] # Get user's message from their request
+    user_message = request.json['userMessage'] # Get user's message from their request
     print('user_message', user_message)
     voice = request.json['voice'] # Get user's preferred voice from their request
     print('voice', voice)
